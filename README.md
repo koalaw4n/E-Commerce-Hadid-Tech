@@ -5,6 +5,8 @@
     <li>Kelas : Laravel Backend Batch 2</li>
 </ul>
 <ul>
+    <li>Gitlab : https://gitlab.com/muhammadikhwanfathulloh17</li>
+    <li>Github : https://github.com/Muhammad-Ikhwan-Fathulloh</li>
     <li>Github : https://github.com/koalaw4n/E-Commerce-Hadid-Tech</li>
     <li>Deploy : http://e-commerce-hadid-tech.herokuapp.com/</li>
 </ul>
