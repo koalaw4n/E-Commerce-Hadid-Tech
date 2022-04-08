@@ -16,14 +16,14 @@ class Produkcontroller extends Controller
     	$data = [
     		'produk' => $this->Produkmodel->allData(),
     	];
-    	
+
     	return view('produk.v_produk', $data);
     }
 
     public function search(Request $request){
         $cari = $request->cari;
         $produk = $this->Produkmodel->Search($cari);
-        
+
         return view('produk.v_produk', ['produk' => $produk]);
     }
 
