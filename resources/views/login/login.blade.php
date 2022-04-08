@@ -14,11 +14,11 @@
   <link rel="shortcut icon" type="image/png" href="logo/hadid.png">
 
   <!-- Custom fonts for this template-->
-  <link href="{{asset('template')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="{{asset('template')}}/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="{{secure_asset('template')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{secure_asset('template')}}/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{{asset('template')}}/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="{{secure_asset('template')}}/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -48,7 +48,7 @@
                         @csrf
                     <div class="form-group">
                       <input id="email" type="email" name="email" class="form-control-user border-primary form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address...">
-                                
+
                     </div>
                     @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -57,7 +57,7 @@
                                 @enderror
                     <div class="form-group">
                       <input type="password" name="password" class="form-control form-control-user border-primary @error('password') is-invalid @enderror" required id="password" placeholder="Password">
-                                
+
                     </div>
                     @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -67,9 +67,9 @@
                     <!-- <a href="/login" class="btn btn-primary btn-user btn-block">
                       Login
                     </a> -->
-                    
+
                     <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
-                  
+
                   </form>
                   <hr>
                   <div class="text-center">
@@ -88,14 +88,14 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{asset('template')}}/vendor/jquery/jquery.min.js"></script>
-  <script src="{{asset('template')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/jquery/jquery.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="{{asset('template')}}/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="{{asset('template')}}/js/sb-admin-2.min.js"></script>
+  <script src="{{secure_asset('template')}}/js/sb-admin-2.min.js"></script>
 
 </body>
 
