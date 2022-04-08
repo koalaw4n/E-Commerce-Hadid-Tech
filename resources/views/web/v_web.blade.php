@@ -188,7 +188,7 @@
       <p class="float-end mb-1">
         <a href="#" class="text-white btn btn-info"><i class="fas fa-fw fa-arrow-circle-up"></i> Back to top</a>
       </p>
-      <p class="mb-1">Copyright &copy; 2021 | Hadid Technology</p>
+      <p class="mb-1">Copyright &copy; 2022 | Hadid Technology</p>
       <p class="mb-0">Iron Technology for Good Change</p>
     </div>
   </footer>
