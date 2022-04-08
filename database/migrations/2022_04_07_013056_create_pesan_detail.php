@@ -14,8 +14,12 @@ class CreatePesanDetail extends Migration
     public function up()
     {
         Schema::create('pesan_detail', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('id_pesanan');
+            $table->string('id_produk');
+            $table->integer('id_pesan');
+            $table->integer('jumlah');
+            $table->integer('jumlah_harga');
+            $table->datetime('tanggal');
         });
     }
 

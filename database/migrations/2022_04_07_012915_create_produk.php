@@ -14,8 +14,14 @@ class CreateProduk extends Migration
     public function up()
     {
         Schema::create('produk', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('id_produk');
+            $table->string('nama_produk');
+            $table->string('gambar_produk');
+            $table->integer('hargabeli_produk');
+            $table->integer('hargajual_produk');
+            $table->integer('stok_produk');
+            $table->string('keterangan_produk');
+            $table->datetime('tanggal_produk');
         });
     }
 

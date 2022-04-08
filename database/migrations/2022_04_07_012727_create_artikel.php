@@ -14,8 +14,14 @@ class CreateArtikel extends Migration
     public function up()
     {
         Schema::create('artikel', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('id_artikel');
+            $table->string('judul_artikel');
+            $table->string('gambar_artikel');
+            $table->string('kategori_artikel');
+            $table->string('keterangan_artikel');
+            $table->string('penulis_artikel');
+            $table->string('isi_artikel');
+            $table->datetime('tanggal');
         });
     }
 

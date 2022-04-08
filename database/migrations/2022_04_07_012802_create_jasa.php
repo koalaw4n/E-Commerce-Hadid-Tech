@@ -14,8 +14,14 @@ class CreateJasa extends Migration
     public function up()
     {
         Schema::create('jasa', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->bigIncrements('id_jasa');
+            $table->string('materi_jasa');
+            $table->string('gambar_jasa');
+            $table->string('keterangan_jasa');
+            $table->string('kategori_jasa');
+            $table->integer('harga_jasa');
+            $table->string('instruktur_jasa');
+            $table->datetime('tanggal');
         });
     }
 
