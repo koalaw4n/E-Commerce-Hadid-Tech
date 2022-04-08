@@ -16,11 +16,11 @@
 
 
   <!-- Custom fonts for this template-->
-  <link href="{{asset('template')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="{{asset('template')}}/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="{{secure_asset('template')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{secure_asset('template')}}/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="{{asset('template')}}/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="{{secure_asset('template')}}/css/sb-admin-2.min.css" rel="stylesheet">
   @livewireStyles
   <style>
       .bd-placeholder-img {
@@ -63,7 +63,7 @@
     </style>
 </head>
 
-<body id="page-top"> 
+<body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -79,7 +79,7 @@
         <img src="{{ url('logo/hadid.png') }}" width="100px">
       </a>
 
-      
+
      @include('layout.v_nav')
 
     <!-- Content Wrapper -->
@@ -110,7 +110,7 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-              
+
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
@@ -167,7 +167,7 @@
           </div>
             <!-- Main content -->
             <section class="content">
-              
+
 
               @yield('content')
 
@@ -176,8 +176,8 @@
           </div>
           <!-- /.content-wrapper -->
           <!-- Footer -->
-      
-     
+
+
 
           @livewireScripts
   <!-- Scroll to Top Button-->
@@ -185,7 +185,7 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-   
+
 
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -202,11 +202,11 @@
         <div class="modal-body">Pilih "Logout" jika yakin mau keluar.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-         
-          
+
+
           <button class="btn btn-primary" type="submit">Logout</button>
-          
-          
+
+
         </div>
         </form>
       </div>
@@ -214,22 +214,22 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{asset('template')}}/vendor/jquery/jquery.min.js"></script>
-  <script src="{{asset('template')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/jquery/jquery.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="{{asset('template')}}/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="{{asset('template')}}/js/sb-admin-2.min.js"></script>
+  <script src="{{secure_asset('template')}}/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="{{asset('template')}}/vendor/chart.js/Chart.min.js"></script>
+  <script src="{{secure_asset('template')}}/vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="{{asset('template')}}/js/demo/chart-area-demo.js"></script>
-  <script src="{{asset('template')}}/js/demo/chart-pie-demo.js"></script>
-  <script src="{{asset('template')}}/js/demo/chart-bar-demo.js"></script>
+  <script src="{{secure_asset('template')}}/js/demo/chart-area-demo.js"></script>
+  <script src="{{secure_asset('template')}}/js/demo/chart-pie-demo.js"></script>
+  <script src="{{secure_asset('template')}}/js/demo/chart-bar-demo.js"></script>
   @include('sweet::alert')
 </body>
 <!-- End of Footer -->
